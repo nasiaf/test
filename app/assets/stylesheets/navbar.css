@@ -1,0 +1,144 @@
+/* Dropdown Button */
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+#fixed-top{
+
+    border: 1px solid transparent;
+  }
+
+
+#mainNav .navbar-collapse, .navbar-default .navbar-form {
+  border-color: transparent;
+  box-shadow: none;
+
+}
+
+#lien_bleu {
+  color: rgba(221, 54, 184, 1);
+}
+
+#lien_bleu:hover {
+  color: rgba(147, 45, 124, 1);
+}
+
+#mainNav {
+  min-height: 3.5rem;
+  background-color: #fff;
+  border-color: transparent;
+  box-shadow: none;
+  border: 1px solid transparent
+}
+#mainNav .navbar-toggler {
+  font-size: 80%;
+  padding: 0.75rem;
+  color: #ffffff;
+border: 1px solid transparent
+}
+#mainNav .navbar-toggler:focus {
+  outline: none;
+}
+#mainNav .navbar-brand {
+  color: #ffffff;
+  font-weight: 700;
+  padding: 3rem 0;
+}
+#mainNav .navbar-nav .nav-item:hover {
+  color: fade(#fff, 80%);
+  outline: none;
+  background-color: transparent;
+}
+#mainNav .navbar-nav .nav-item:active, #mainNav .navbar-nav .nav-item:focus {
+  outline: none;
+  background-color: transparent;
+}
+@media (min-width: 992px) {
+  #mainNav {
+    padding-top: 0;
+    padding-bottom: 0;
+    border-top: none;
+
+    border-bottom: none;
+    background-color: transparent;
+    transition: background-color 0.3s ease-in-out;
+  }
+  #mainNav .navbar-brand {
+    padding: 0.5rem 0;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  #mainNav .nav-link {
+    transition: none;
+    size:100%;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    padding: 1.5rem 1.5rem 1.25rem;
+
+  }
+  #mainNav .nav-link:hover {
+    color: rgba(221, 54, 184, 1);
+  }
+  #mainNav .nav-link:active {
+    color: rgba(221, 54, 184, 1);
+  }
+  #mainNav.navbar-shrink {
+    background-color: rgba(#212529, 1);
+  }
+  #mainNav.navbar-shrink .navbar-brand {
+    color: #ffffff;
+  }
+  #mainNav.navbar-shrink .nav-link {
+    color: rgba(221, 54, 184, 1);
+    padding: 1.5rem 1.5rem 1.25rem;
+    border-bottom: 0rem solid transparent;
+    border-top: 0rem solid transparent;
+
+  }
+  #mainNav.navbar-shrink .nav-link:hover {
+    color: #ffffff;
+  }
+  #mainNav.navbar-shrink .nav-link:active {
+    color: #ffffff;
+  }
+  #mainNav.navbar-shrink .nav-link.active {
+    color: #ffffff;
+    outline: none;
+    border-bottom: 0.25rem solid #64a19d;
+  }
+
+#hamburgerTrigger {
+
+  color: #ffffff;
+
+}
+
+}
