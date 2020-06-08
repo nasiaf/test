@@ -33,6 +33,10 @@ gem 'bootstrap', '~> 4.5'
 gem 'jquery-rails', '~> 4.4'
 gem 'popper_js', '~> 1.16'
 gem 'fontawesome-rails', '~> 4.0', '>= 4.0.3.2'
+gem 'simple_form'
+gem 'jquery-turbolinks'
+
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

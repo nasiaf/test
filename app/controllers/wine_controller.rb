@@ -1,12 +1,25 @@
 class WineController < ApplicationController
-  def index
-    @vins = Wine.all
 
+  def index
+    if params[:color]
+      @vins = Wine.where("color = ?", params[:color])
+    else
+      @vins = Wine.all
+    end
+
+    @p = Wine.new
   end
 
+
+
+
   def create
-      Wine.create name: params[:name]
+
+      Wine.create params.require(:name).permit(:vintage, :goal, :nbr_bottle, :color)
       redirect_to "/wine"
+
+
+
   end
 
   def show
@@ -15,16 +28,17 @@ class WineController < ApplicationController
 
 
   def update
-      Wine.find(params[:id]).update params.permit(:name, :vintage, :goal, :nbr_bottle, :color)
+      Wine.find(params[:id]).update params[:wine].permit(:name, :vintage, :goal, :nbr_bottle, :color)
       redirect_to "/wines/#{params[:id]}"
   end
+
+
+
 
   def destroy
       Wine.find(params[:id]).destroy
       redirect_to "/wine"
   end
-
-
 
 
 
