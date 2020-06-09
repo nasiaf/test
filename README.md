@@ -9,6 +9,8 @@ rails g controller home index
 # install yarn package
 
 yarn add bootstrap jquery popper.js @fortawesome/fontawesome-free
+yarn add datatables.net datatables.net-bs4
+
 
 
 # ajouter Js & fontawesome dans app/javascript/packs/application.js

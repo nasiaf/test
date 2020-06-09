@@ -1,3 +1,2 @@
-//= require_directory 
-
-import("./table");
+//= require_directory
+//= require_tree

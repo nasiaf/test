@@ -1,15 +1,19 @@
 class WineController < ApplicationController
 
+  PAGE_SIZE = 8
+
   def index
+
     if params[:color]
       @vins = Wine.where("color = ?", params[:color])
+
     else
       @vins = Wine.all
     end
 
-    @p = Wine.new
-  end
 
+
+  end
 
 
 
@@ -17,8 +21,6 @@ class WineController < ApplicationController
 
       Wine.create params.require(:name).permit(:vintage, :goal, :nbr_bottle, :color)
       redirect_to "/wine"
-
-
 
   end
 
@@ -32,14 +34,8 @@ class WineController < ApplicationController
       redirect_to "/wines/#{params[:id]}"
   end
 
-
-
-
   def destroy
       Wine.find(params[:id]).destroy
       redirect_to "/wine"
   end
-
-
-
 end
