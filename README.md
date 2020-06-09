@@ -1,3 +1,7 @@
+#git save password
+
+git config credential.helper store
+
 # création App
 
 rails new App

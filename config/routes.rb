@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   get 'blanc' => 'wine#blanc'
   get 'rose' => 'wine#rose'
   get 'autre' => 'wine#autre'
+  get 'soon' => 'home#soon'
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

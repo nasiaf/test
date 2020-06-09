@@ -4,7 +4,7 @@ document.addEventListener("turbolinks:load", () => {
   if (dataTables.length === 0 && $('.data-table').length !== 0) {
     $('.data-table').each((_, element) => {
       dataTables.push($(element).DataTable({
-        pageLength: 10
+        pageLength: 7
       }));
     });
   }
